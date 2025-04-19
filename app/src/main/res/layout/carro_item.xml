@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Preço -->
+    <TextView
+        android:id="@+id/tv_preco_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Preço"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/iv_favorite"
+        app:layout_constraintBottom_toBottomOf="@id/iv_favorite"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <!-- Estrela favorita -->
+    <ImageView
+        android:id="@+id/iv_favorite"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_star"
+        android:contentDescription="Favorito"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_bateria_value"
+        android:layout_marginStart="8dp" />
+
+    <!-- Bateria -->
+    <TextView
+        android:id="@+id/tv_bateria_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Bateria"
+        app:layout_constraintTop_toBottomOf="@id/iv_favorite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Potência -->
+    <TextView
+        android:id="@+id/tv_potencia_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Potência"
+        app:layout_constraintTop_toBottomOf="@id/tv_bateria_value"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp" />
+
+    <!-- Recarga -->
+    <TextView
+        android:id="@+id/tv_recarga_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Recarga"
+        app:layout_constraintTop_toBottomOf="@id/tv_potencia_value"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
