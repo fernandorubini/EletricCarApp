@@ -1,7 +1,7 @@
 # 🚗 EletricCarApp
 
-![Kotlin](https://img.shields.io/badge/Kotlin-blue?logo=java)
-![Status](https://img.shields.io/badge/Status-Desenvolvido-yellow)
+![Status](https://img.shields.io/badge/status-finalizado-yellow)
+![Java](https://img.shields.io/badge/language-Java17-blue)
 ![Atualizado](https://img.shields.io/badge/Atualizado-2025-brightgreen)
 
 Aplicativo Android desenvolvido com **Kotlin** que exibe uma lista de carros elétricos obtidos de uma API externa. 
